@@ -1,0 +1,157 @@
+//artwork__section
+
+.artwork {
+
+  &__section {
+    margin-top: 50px;
+    padding: 0 80px;
+    display: flex;
+    justify-content:  space-between;
+    gap: 80px;
+
+    @media (max-width: $breakpoint1024) {
+      gap: 40px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: $breakpoint768) {
+      padding: 0 40px;
+    }
+
+    @media (max-width: $breakpoint480) {
+      padding: 0 24px;
+    }
+  }
+
+  &__left {
+    flex: 0 1 50%;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    justify-content: space-between;
+
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 100%;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 104px;
+      line-height: 104px;
+      max-width: 458px;
+      color: #202025;
+
+      @media (max-width: $breakpoint1601) {
+        font-size: 96px;
+      }
+      
+      @media (max-width: $breakpoint1450) {
+        font-size: 80px;
+        line-height: 80px;
+      }
+      
+      @media (max-width: $breakpoint1200) {
+        font-size: 64px;
+        line-height: 64px;
+      }
+
+      @media (max-width: $breakpoint480) {
+        font-size: 40px;
+        line-height: 40px ;
+      }
+    }
+  }
+
+  &__svg {
+    background: #6DD3C2;
+    border-radius: 48px;
+    padding: 16px 30px;
+    margin-top: 20px;
+
+    @media (max-width: $breakpoint1450) {
+      transform: scale(.9);
+    }
+
+    @media (max-width: $breakpoint1200) {
+      transform: scale(.8);
+      margin-top: 0;
+    }
+
+    @media (max-width: $breakpoint1024) {
+      transform: scale(.75);
+    }
+
+    @media (max-width: $breakpoint992) {
+      transform: scale(.7);
+      margin-left: -28px;
+    }
+  }
+
+
+  &__right {
+    flex: 0 1 50%;
+    padding-top: 36px;
+
+    @media (max-width: $breakpoint1450) {
+      padding-top: 0;
+    }
+
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 100%
+    }
+
+    p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.02em;
+      color: #686A6C;
+
+
+    }
+  }
+
+  &__link {
+    margin-top: 76px;
+
+
+    @media (max-width: $breakpoint1450) {
+      margin-top: 30px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      line-height: 10px;
+      color: #202025;
+
+
+      svg {
+        circle {
+          transition: all .3s ease;
+        }
+      }
+
+
+      &:hover {
+        color: #b40101;
+
+        svg {
+          circle {
+            transition: all .3s ease;
+
+            stroke: #b40101;
+          }
+        }
+      }
+    }
+  }
+
+}

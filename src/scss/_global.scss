@@ -1,9 +1,9 @@
 // Container
 .container {
-    max-width: ($containerWidth + $containerPadding) + px;
+    max-width: $containerWidth + px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 $containerSidePadding + px;
+    //padding: 0 $containerSidePadding + px;
 
     @media (max-width: $breakpoint1450) {
         max-width: 1200px;
@@ -24,14 +24,17 @@
 
 // Body & Locked
 body {
-    font-family: $fontMain;
+    font-family: 'Inter', sans-serif;
     &.locked {
         overflow: hidden;
     }
     // Dark mode styles
+    background-color: #F7FBFA;
     &.dark {
         background: #242424;
     }
+
+    height: 10000px;
 }
 
 // Animations
@@ -44,4 +47,14 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+.link {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    transition: all .3s ease;
 }
