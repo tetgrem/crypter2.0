@@ -240,6 +240,11 @@
           border-radius: 12px;
           padding: 16px 56px;
           background: #F7FBFA;
+          transition: all .3s ease;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
     }

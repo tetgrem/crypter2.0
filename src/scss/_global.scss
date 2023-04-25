@@ -58,3 +58,29 @@ body {
     text-transform: uppercase;
     transition: all .3s ease;
 }
+
+.h1__80 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -0.02em;
+    color: #202025;
+
+    @media (max-width: $breakpoint1200) {
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 64px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        font-size: 48px;
+        line-height: 48px;
+    }
+}
+
+svg {
+    path {
+        transition: all .9s ease;
+    }
+}

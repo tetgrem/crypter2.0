@@ -121,6 +121,21 @@ body.dark {
   transition: all 0.3s ease;
 }
 
+.h1__80 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -0.02em;
+  color: #202025;
+}
+
+svg path {
+  -webkit-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -360,6 +375,15 @@ body.dark {
   border-radius: 12px;
   padding: 16px 56px;
   background: #F7FBFA;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main__menu.active .left__half .left__links a:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main__menu.active .right__half {
@@ -587,6 +611,159 @@ body.dark {
   stroke: #b40101;
 }
 
+.nft__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nft__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.nft__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.network__section {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.network__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 795px;
+          flex: 0 1 795px;
+}
+
+.network__left img {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+}
+
+.network__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 795px;
+          flex: 0 1 795px;
+  background-color: #DBFF73;
+  padding: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+}
+
+.network__right .right__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #F7FBFA;
+  -webkit-box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 16px 40px -8px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 16px 24px;
+}
+
+.network__right .right__row .row__item span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01;
+  color: #686A6C;
+}
+
+.network__right .right__row .row__item .item__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.network__right .right__row .row__item .item__row h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  color: #202025;
+}
+
+.network__right .right__btns {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+.network__right .right__btns .network__btn {
+  width: 308px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 64px;
+  border-radius: 4px;
+}
+
+.network__right .right__btns .left__btn {
+  gap: 15px;
+  color: #010101;
+  border: 2px solid #010101;
+}
+
+.network__right .right__btns .left__btn:hover {
+  color: #F7FBFA;
+  background-color: #010101;
+}
+
+.network__right .right__btns .left__btn:hover svg path {
+  fill: #F7FBFA;
+}
+
+.network__right .right__btns .right__btn {
+  background: #202025;
+  color: #F7FBFA;
+}
+
+.network__right .right__btns .right__btn:hover {
+  background-color: #F7FBFA;
+  color: #202025;
+}
+
 @media (max-width: 1601px) {
   .main__menu.active .right__half ul li {
     padding: 20px 0;
@@ -627,6 +804,24 @@ body.dark {
   .artwork__link {
     margin-top: 30px;
   }
+
+  .network__left img {
+    max-width: 720px;
+    height: auto;
+  }
+
+  .network__right {
+    padding: 80px 34px;
+  }
+
+  .network__right .right__row {
+    max-width: 592px;
+    width: 100%;
+  }
+
+  .network__right .right__btns .network__btn {
+    width: 284px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -642,6 +837,12 @@ body.dark {
 }
 
 @media (max-width: 1199.98px) {
+  .h1__80 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 64px;
+  }
+
   .header__right .secondary__menu nav ul li:nth-child(2) {
     display: none;
   }
@@ -656,6 +857,19 @@ body.dark {
         -ms-transform: scale(0.8);
             transform: scale(0.8);
     margin-top: 0;
+  }
+
+  .network__right {
+    padding: 24px;
+  }
+
+  .network__right .right__row .row__item .item__row h3 {
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .network__right .right__btns .network__btn {
+    width: 204px;
   }
 }
 
@@ -674,6 +888,11 @@ body.dark {
 @media (max-width: 991.98px) {
   .container {
     max-width: 970px;
+  }
+
+  .h1__80 {
+    font-size: 48px;
+    line-height: 48px;
   }
 
   .header__left {
@@ -718,6 +937,39 @@ body.dark {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+  }
+
+  .network__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .network__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .network__right .right__row .row__item:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 836px) {
+  .network__section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .network__left img {
+    max-width: 836px;
+    width: 100%;
+  }
+
+  .network__right .right__row {
+    max-width: 327px;
+    margin-bottom: 50px;
   }
 }
 
@@ -791,5 +1043,25 @@ body.dark {
   .artwork__left h1 {
     font-size: 40px;
     line-height: 40px;
+  }
+
+  .network__right .right__btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .network__right .right__btns .network__btn {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 356px) {
+  .network__right .right__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
   }
 }
