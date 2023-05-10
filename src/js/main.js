@@ -24,3 +24,27 @@ function burgerMenu() {
     })
 }
 burgerMenu()
+
+
+const swiper = new Swiper('.swiper', {
+
+    navigation: {
+        nextEl: '.next__btn',
+        prevEl: '.prev__btn',
+    },
+    // spaceBetween: 40,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    breakpoints: {
+
+    1000: {
+        slidesPerView: 2,
+    },
+    1450: {
+            slidesPerView: 3,
+        }
+    }
+});
